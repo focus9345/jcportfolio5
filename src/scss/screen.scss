@@ -1,0 +1,128 @@
+:root {
+  --color__bg: #E6E6E6;
+  --color__bgalt: #FAFAFA;
+  --color__bgralt: #C8C8C8;
+  --color__menu_bg: rgba(255,255,255, 0.5);
+  --color__text: #0A0A0A;
+  --color__green: #99A701;
+  --color__purple: #75208D;
+  --color__swap:#75208D;
+  --color__swaplt: #AA3FC7;
+  
+  @media screen {
+    &[data-theme="dark"] {
+      --color__bg: #0A0A0A;
+      --color__bgalt: #272727;
+      --color__bgralt: #606060;
+      --color__menu_bg: rgba(0,0,0, 0.5);
+      --color__text: #E6E6E6;
+      --color__green: #C2D500;
+      --color__purple: #AA3FC7;
+      --color__swap:#C2D500;
+      --color__swaplt: #99A701;
+    }
+  }
+}
+  
+$color__bg: var(--color__bg);
+$color__bgalt: var(--color__bgalt);
+$color__bgralt: var(--color_bgralt);
+$color__bgmenu: var(--color__menu_bg);
+$color__text: var(--color__text);
+$color__green: var(--color__green);
+$color__purple: var(--color__purple);
+$color__swap: var(--color__swap);
+$color__swaplt: var(--color__swaplt);
+body {
+  background-color: $color__bg;
+  color: $color__text;
+}
+.bright {
+  background: $color__bg;
+}
+.bright-txt {
+  color: $color__bg;
+}
+.alt-txt-heading {
+  color:$color__swap;
+}
+.footer {
+ background: rgba(150,150,150,0.5);
+ color: $color__text;
+  a {
+    color: $color__swap;
+  }
+}
+.alt_bg {
+  background-color: $color__bgalt;
+  color: $color__text;
+}
+.green_bg {
+  background-color: $color__green;
+  color: $color__text;
+}
+
+.purple_bg {
+  background-color: $color__purple;
+  color: $color__text;
+}
+.alt_bdr {
+  border-color: $color__bgralt;
+  color: $color__text;
+}
+.green_bdr {
+  border-color: $color__green;
+}
+.purple_bdr {
+  border-color: $color__purple;
+}
+a {
+  color: $color__green;
+  &:hover {
+    color: $color__text;
+  }
+}
+button, .button, .btn {
+  background-color: $color__swap;
+  color: $color__bg;
+  &:hover {
+    background-color: $color__swaplt;
+    color: $color__bg;
+  }
+  &:active {
+    background-color: $color__swaplt;
+    color: $color__bg;
+  }
+  &:focus {
+    background-color: $color__swaplt;
+    color: $color__bg;
+  }
+}
+.active {
+  color: $color__purple;
+  &:active,  &:hover {
+    color: $color__purple;
+  }
+}
+.menu_bg  {
+  background-color:$color__bgmenu;
+  a {
+      color:$color__purple;
+    &:hover {
+      color: $color__green;
+    }
+  }
+}
+
+
+/*
+$green: rgb(194,213,0);
+$green-deep: rgba(195, 213, 0, 0.699);
+$purple: rgb(156, 66, 180);
+$purple-deep: rgb(138, 54, 161);
+$light-grey: rgba(200,200,200,0.9);
+$lighter-grey: rgba(230, 230, 230, 0.9);
+$dark-grey: rgba(100, 100, 100, 0.9);
+$darkerer-grey: rgba(30, 30, 30, 0.9);
+$darkerest-grey: rgba(10, 10, 10, 0.9);
+*/

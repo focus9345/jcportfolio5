@@ -1,0 +1,130 @@
+@import 'normalize.css';
+@import 'mixin/fonts';
+@import 'mixin/pallet';
+@import 'screen';
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: $body;
+    font-weight:300;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $heading;
+    width: 100%;
+    font-weight: 300;
+    display: block;
+    margin:0;
+}
+h1 {
+    text-align: center;
+    font-size: 3.3em;
+    margin: 0 auto 1.5em;
+}
+h2 {
+    text-align: center;
+    font-size: 3em;
+    margin: 2em auto .5em;
+}
+h3 {
+    font-size: 1.7em;
+    margin: 1.5em auto .25em;
+}
+h4 {
+    font-size: 1.3em;
+    margin: 1em auto .25em;
+}
+h5 {
+    font-size: 1.2em;
+    font-weight:600;
+    margin: 1em auto .25em;
+}
+h6 {
+    font-size: 1.2em;
+    font-style: italic;
+    margin: 1em auto .25em;
+}
+
+.button, .btn {
+    padding: 1em;
+    margin: 1em auto;
+    width: 50%;
+    border-radius: 0.4em;
+    border-style: solid;
+    text-decoration: none;
+    transition: all 1s ease;
+    border:none;
+    &:hover  {
+
+    }
+    &:focus  {
+        
+    }
+    &:active  {
+        
+    }
+}
+button.icon, .button.icon {
+    display: inline-block;
+    padding:0 0.5em;
+    margin:0;
+    background: none;
+    border:none;
+    font-size: 1.5em;
+    &:active {
+        border:none;
+    }
+}
+.flex-page {
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;  
+}
+.full_height {
+    min-height: 100vh;
+    padding-top: 80px;
+}
+nav {
+    a {
+        text-decoration:none;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+footer {
+    padding: 1rem 0;
+    font-family: $body;
+    font-weight:400;
+    font-size:.8rem;
+    text-align: center;
+}
+/*
+
+*/
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+@media only screen and (min-width: 900px) {
+    .container {
+        align-items: stretch;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        display: block;
+    }
+}
