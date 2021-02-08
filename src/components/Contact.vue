@@ -57,7 +57,7 @@
                 <vue-recaptcha sitekey="6Lc2vLQZAAAAAGPcVGthoqaqPf7TO677L-W1S93s"></vue-recaptcha>
               </div>
               <div class="form-group">
-                <input type="submit" value="Send" class="btn" />
+                <input type="submit" value="Send" class="btn btn-reverse" />
               </div>
             </form>
        </div>
@@ -165,11 +165,8 @@ background-color: transparent;
         .btn {
           width: 50%;
           padding:1em;
-          border:none;
-          margin:.5em auto;
+          margin:.75em auto;
         }
-        
-        
       }
     }
     .col {

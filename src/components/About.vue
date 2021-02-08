@@ -59,6 +59,7 @@ export default {
     width: 140px;
     margin:20px auto 10px auto;
     background-image: url(../assets/bicycle.svg);
+    background-color: #272727;
     background-repeat: no-repeat;
     background-position: 14px 20px;
     background-size: 130%;

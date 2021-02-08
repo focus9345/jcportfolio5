@@ -4,12 +4,13 @@
       <div class="container">
         <div class="card alt_bdr alt_bg">
           <h3>Inside Southern Arts and Science</h3>
-          <p><em>Jan. 2020</em><br />
-          <strong>Stack:</strong> html, css, javascript, bootstrap, drupal
+          <time datetime="2020-01-15">Janurary 2020</time>
+          <p><strong>Stack:</strong> html, css, javascript, bootstrap, drupal
           </p>
-          <a class="btn">Info</a>
-          <a class="btn" href="#">Demo</a>
-          <button @click="toggleNav()">Toggle</button>
+          <footer>
+          <a class="btn" href="#">Info</a>
+          <button @click="toggleNav()" class="btn">Toggle</button>
+          </footer>
         </div>
       </div>
     </section>
@@ -37,5 +38,27 @@ export default {
     text-align: center;
     padding: 1.6% 1%;
     margin-bottom: 1.5em;
+
+    h3 {
+      margin:.75em 0 .25em;
+      padding:0;
+    }
+    time {
+      font-size: 0.8em;
+      font-style: italic;
+    }
+    p {
+      margin: 0.25em 0 0.5em;
+    }
+    .btn {
+      display: inline-block;
+      margin: 0.5em;
+      padding: 0.85em 1.85em;
+      width:auto;
+    }
+    footer {
+      margin:0.25em 0;
+      padding:0;
+    }
   }
 </style>
